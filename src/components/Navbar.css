@@ -1,0 +1,150 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 72px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.brand-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #ff6b35, #e91e8c, #8b2be2);
+  color: white;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.brand-name {
+  background: linear-gradient(90deg, #ff6b35, #e91e8c, #8b2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navigation */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  color: #64748b;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #e91e8c;
+}
+
+.nav-links a.active {
+  color: #e91e8c;
+}
+
+/* Authentication */
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.sign-in {
+  border: none;
+  background: transparent;
+  color: #475569;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sign-in:hover {
+  color: #e91e8c;
+}
+
+.sign-up {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #ff6b35, #e91e8c, #8b2be2);
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  opacity: 0.9;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .navbar-container {
+    height: auto;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .auth-buttons {
+    gap: 10px;
+  }
+
+  .sign-up {
+    padding: 8px 15px;
+  }
+}
