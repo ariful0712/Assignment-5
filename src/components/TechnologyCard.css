@@ -1,0 +1,98 @@
+.technology-card {
+  padding: 20px;
+  border: 1px solid #e8ebf0;
+  border-radius: 14px;
+  background: white;
+
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+  transition: 0.2s;
+}
+
+.technology-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technology-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  background: #fff1f7;
+  color: #e91e8c;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.technology-card h3 {
+  margin: 18px 0 8px;
+
+  font-size: 18px;
+  color: #172033;
+}
+
+.technology-description {
+  min-height: 66px;
+  margin: 0;
+
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.technology-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 16px;
+  padding-top: 14px;
+
+  border-top: 1px solid #f0f2f5;
+
+  font-size: 11px;
+  color: #718096;
+}
+
+.technology-info span {
+  padding: 5px 8px;
+  background: #f5f7fa;
+  border-radius: 4px;
+}
+
+.add-button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 11px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #0f172a;
+  color: white;
+
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #1e293b;
+}
+
+.add-button:disabled {
+  background: #dfe3e8;
+  color: #64748b;
+  cursor: not-allowed;
+}
