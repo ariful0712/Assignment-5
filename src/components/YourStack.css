@@ -1,0 +1,171 @@
+/* Your Stack */
+
+.your-stack {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+
+/* Header */
+
+.stack-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+.stack-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+
+.stack-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+/* Remove All */
+
+.remove-all-button {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.remove-all-button:hover {
+  text-decoration: underline;
+}
+
+
+/* Empty Stack */
+
+.empty-stack {
+  padding: 30px 15px;
+  text-align: center;
+  background-color: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+}
+
+
+.empty-stack p {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+
+.empty-stack span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* Stack List */
+
+.stack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+/* Stack Item */
+
+.stack-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+}
+
+
+.stack-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+.stack-info {
+  flex: 1;
+}
+
+
+.stack-info h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  color: #111827;
+}
+
+
+.stack-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* Remove Button */
+
+.remove-button {
+  width: 28px;
+  height: 28px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #fee2e2;
+  color: #dc2626;
+
+  font-size: 20px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+.remove-button:hover {
+  background-color: #fecaca;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .your-stack {
+    position: static;
+  }
+
+}
+@media (max-width: 600px) {
+  .your-stack {
+    padding: 18px;
+  }
+  .stack-header h2 {
+    font-size: 20px;
+  }
+
+}

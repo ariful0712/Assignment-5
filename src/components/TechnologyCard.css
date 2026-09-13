@@ -51,7 +51,6 @@
   font-size: 13px;
   line-height: 1.6;
 }
-
 .technology-info {
   display: flex;
   align-items: center;
@@ -65,13 +64,11 @@
   font-size: 11px;
   color: #718096;
 }
-
 .technology-info span {
   padding: 5px 8px;
   background: #f5f7fa;
   border-radius: 4px;
 }
-
 .add-button {
   width: 100%;
   margin-top: 15px;
@@ -86,11 +83,9 @@
   font-size: 13px;
   cursor: pointer;
 }
-
 .add-button:hover {
   background: #1e293b;
 }
-
 .add-button:disabled {
   background: #dfe3e8;
   color: #64748b;

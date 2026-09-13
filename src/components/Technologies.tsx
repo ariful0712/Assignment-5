@@ -35,19 +35,15 @@ function Technologies({
 
   return (
     <section className="technologies-section" id="technologies">
-
       <div className="section-heading">
         <h2>
           Explore the <span>Technologies</span>
         </h2>
-
         <p>
           Pick one technology per category to build your ideal stack.
         </p>
       </div>
-
       <div className="technology-layout">
-
         <div className="technology-grid">
           {technologies.map(technology => (
             <TechnologyCard
@@ -60,9 +56,7 @@ function Technologies({
             />
           ))}
         </div>
-
       </div>
-
     </section>
   )
 }

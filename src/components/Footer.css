@@ -1,0 +1,175 @@
+/* Footer */
+
+.footer {
+  margin-top: 80px;
+  padding: 60px 20px 20px;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+
+/* Main Footer */
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+
+/* Brand */
+
+.footer-brand {
+  max-width: 320px;
+}
+
+
+.footer-logo {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #ff6b35,
+    #e91e8c,
+    #8b2be2
+  );
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.footer-brand h2 {
+  margin: 12px 0;
+  font-size: 22px;
+}
+
+
+.footer-brand p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* Social Links */
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+
+.social-links a {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+
+.social-links a:hover {
+  color: #ffffff;
+}
+
+
+/* Footer Columns */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.footer-column h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+
+.footer-column a {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding-top: 20px;
+
+  border-top: 1px solid #1e293b;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer-bottom p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+
+.footer-bottom div {
+  display: flex;
+  gap: 20px;
+}
+
+
+.footer-bottom a {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+
+.footer-bottom a:hover {
+  color: #ffffff;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+}
