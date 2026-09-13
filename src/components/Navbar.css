@@ -44,8 +44,8 @@
 
 .brand-name {
   background: linear-gradient(90deg, #ff6b35, #e91e8c, #8b2be2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Navigation */
